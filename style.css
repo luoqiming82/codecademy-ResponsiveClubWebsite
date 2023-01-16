@@ -1,0 +1,204 @@
+html{
+    font-size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:beige;
+    /*
+    background-image: url('./imgs/lion.jpg');
+    background-size: 100%;
+    */
+    font-family: sans-serif, serif, monospace;
+}
+
+/*header*/
+header{
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+.logo {
+   /* font-style: italic; */
+    font-size: xx-large;
+    text-align: center;
+    color: brown;
+    padding: 1rem;
+    font-family: 'Lobster', sans-serif;
+}
+
+.logo-img{
+    width:20%;
+    margin: 0 auto 0.5rem auto;
+}
+@media only screen and (max-width:1000px){
+    .logo-img{
+        width: 30%;
+    }
+}
+@media only screen and (max-width:768px){
+    .logo-img{
+        width: 40%;
+    }
+}
+.logo-img img{
+    width: 100%;
+}
+
+.nav-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    /*color:aqua;*/
+}
+
+@media only screen and (min-width:1200px){
+    .logo{font-size:xxx-large;}
+    .nav a{font-size:1.3rem;}
+}
+
+.nav a:hover{
+    color:chartreuse;
+    font-size: 2rem;
+}
+
+/*main*/
+
+    /* intro */
+.intro-heading h3{
+    text-align: center;
+    color:chocolate;
+    padding: 2rem 0 0 0;
+}
+
+.intro-txt p{
+    text-align: justify;
+    font-size: 1.1rem;
+}
+@media only screen and (max-width:600px){
+    .intro-txt p{
+        
+        width:90%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:600px){
+    .intro-txt p{
+        
+        width:90%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:768px){
+    .intro-txt p{
+        
+        width:80%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width:1200px){
+    .intro-txt p{
+        
+        width:70%;
+        padding: 1rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+}
+
+.img-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.club-founder{
+    width:30%;
+    padding: 1rem 1rem;
+}
+@media only screen and (max-width:600px){
+    .club-founder{
+        width: 60%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:992px){
+    .club-founder{
+        width: 50%;
+    }
+}
+
+.club-founder img{
+    max-width: 100%;
+}
+.club-founder p{
+    text-align: center;
+    color:coral;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+    /* activity */
+.activity-heading{
+    text-align: center;
+    color:darkgreen;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width:768px){
+    .activity-grid{
+        width: 80%;
+        margin: 0.5rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .activity-grid{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1rem;
+    }
+}
+
+.activity-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.activity-img img{
+    width: 100%;
+}
+
+.activity-txt{
+    text-align: center;
+    text-transform: capitalize;
+    color:blue;
+}
+
+/*footer*/
