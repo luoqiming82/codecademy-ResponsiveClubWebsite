@@ -86,7 +86,7 @@ header{
 }
 
 .intro-txt p{
-    text-align: justify;
+    text-align:left;
     font-size: 1.1rem;
 }
 @media only screen and (max-width:600px){
@@ -202,3 +202,31 @@ header{
 }
 
 /*footer*/
+#join{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.join-link {
+    padding-bottom: 1.5rem;
+}
+
+.join-link a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    padding: 0.5rem;
+    border-radius: 15%;
+    box-shadow: -5px -5px;
+}
+.join-link a:hover {
+    color: green;
+    border: 1px solid green;
+    font-size: xxx-large;
+}
+
+.email {
+    color:blue;
+}
